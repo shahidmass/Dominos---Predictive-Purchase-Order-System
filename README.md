@@ -68,14 +68,6 @@ Food Service Industry
 
 
 
-## Run Locally
-
-Clone the project
-
-```bash
-  git clone https://github.com/Vijay6383/Dominos---Predictive-Purchase-Order-System.git
-```
-
 Install dependencies
 
 ```bash
