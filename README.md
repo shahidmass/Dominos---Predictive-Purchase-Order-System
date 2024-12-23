@@ -1,70 +1,69 @@
-Dominos - Predictive Purchase Order System
-Food Service Industry
+# Dominos - Predictive Purchase Order System
 
-Problem Statement:
-Objective: Dominos wants to optimize the process of ordering ingredients by predicting future sales and creating a purchase order. By accurately forecasting sales, Dominos can ensure that it has the right amount of ingredients in stock, minimizing waste and preventing stockouts. This project aims to leverage historical sales data and ingredient information to develop a predictive model and generate an efficient purchase order system.
+## Project Overview
 
-Business Use Cases
-Inventory Management: Ensuring optimal stock levels to meet future demand without overstocking.
+The **Dominos - Predictive Purchase Order System** aims to optimize the ingredient ordering process for Dominos by accurately forecasting future sales. By leveraging historical sales data and ingredient information, this project develops a predictive model to generate efficient purchase orders, minimizing waste and preventing stockouts.
 
-Cost Reduction: Minimizing waste and reducing costs associated with expired or excess inventory.
+## Table of Contents
 
-Sales Forecasting: Accurately predicting sales trends to inform business strategies and promotions.
+- [Project Overview](#project-overview)
+- [Problem Statement](#problem-statement)
+- [Business Use Cases](#business-use-cases)
+- [Approach](#approach)
+- [Technologies Used](#technologies-used)
+- [Dataset](#dataset)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Results](#results)
+- [Contributing](#contributing)
+- [License](#license)
 
-Supply Chain Optimization: IStreamlining the ordering process to align with predicted sales and avoid disruptions.
+## Problem Statement
 
-🛠 Skills
-Data Cleaning and Preprocessing
-Exploratory data analysis (EDA)
-Model Evaluation
-Predictive modeling
-Time series forecasting
-Business decision making
-Approach
-Data Preprocessing and Exploration
+Dominos wants to optimize the process of ordering ingredients by predicting future sales and creating a purchase order. By accurately forecasting sales, Dominos can ensure that it has the right amount of ingredients in stock, minimizing waste and preventing stockouts.
 
-Data Cleaning: Remove any missing or inconsistent data entries, handle outliers, and format the data appropriately.
+## Business Use Cases
 
-Exploratory Data Analysis (EDA): Analyze sales trends, seasonality, and patterns in the historical sales data. Visualize the data to identify significant features.
+- **Inventory Management**: Ensuring optimal stock levels to meet future demand without overstocking.
+- **Cost Reduction**: Minimizing waste and reducing costs associated with expired or excess inventory.
+- **Sales Forecasting**: Accurately predicting sales trends to inform business strategies and promotions.
+- **Supply Chain Optimization**: Streamlining the ordering process to align with predicted sales and avoid disruptions.
 
-Sales Prediction
+## Approach
 
-Feature Engineering: Create relevant features from the sales data, such as day of the week, month, promotional periods, and holiday effects.
+1. **Data Preprocessing and Exploration**:
+   - Data cleaning and handling missing values.
+   - Exploratory Data Analysis (EDA) to identify trends and patterns.
 
-Model Selection: Choose an appropriate time series forecasting model (e.g., ARIMA, SARIMA, Prophet, LSTM, Regression Model).
+2. **Sales Prediction**:
+   - Feature engineering to create relevant features.
+   - Model selection and training using time series forecasting models (e.g., ARIMA, Prophet).
+   - Model evaluation using metrics like Mean Absolute Percentage Error (MAPE).
 
-Model Training: Train the predictive model on the historical sales data.
+3. **Purchase Order Generation**:
+   - Predicting sales for the next week.
+   - Calculating required quantities of each ingredient based on predicted sales.
+   - Generating a detailed purchase order.
 
-Model Evaluation: Use metric Mean Absolute Percentage Error (MAPE) to evaluate model performance.
+## Technologies Used
 
-Purchase Order Generation
+- Python
+- Pandas
+- NumPy
+- Matplotlib
+- Seaborn
+- Statsmodels
+- Prophet
+- Scikit-learn
 
-Sales Forecasting: Predict pizza sales for the next one week (your choice of months or weeks) using the trained model.
-Ingredient Calculation: Calculate the required quantities of each ingredient based on the predicted sales and the ingredient dataset.
-Purchase Order Creation: Generate a detailed purchase order listing the quantities of each ingredient needed for the predicted sales period.
-Dataset
-Sales Data: Historical sales records (Date, Pizza Type, Quantity Sold, Price, Category, Ingredients)
+## Dataset
 
-Ingredient Data: Ingredient requirements for each pizza type (Pizza Type, Ingredient, Quantity Needed)
+- **Sales Data**: Historical sales records (Date, Pizza Type, Quantity Sold, Price, Category, Ingredients).
+- **Ingredient Data**: Ingredient requirements for each pizza type (Pizza Type, Ingredient, Quantity Needed).
 
-Run Locally
-Clone the project
+## Installation
 
-  git clone https://github.com/Vijay6383/Dominos---Predictive-Purchase-Order-System.git
-Install dependencies
+To run this project, you need to have Python installed along with the required libraries. You can install the necessary libraries using pip:
 
-  pip install prophet, statsmodels, scikit-learn, scipy, seaborn 
-Tags
-Data Cleaning
-EDA
-Time Series Forecasting
-ARIMA/SARIMA/Prophet/Regression Model
-Predictive Modeling
-Inventory Management
-Scikit-learn
-Matplotlib/Seaborn
-Project Evaluation metrics
-Cleaned and preprocessed datasets
-Predictive model with code and evaluation metrics
-Detailed purchase order for the next week
-Project report documenting methodology, findings, and business implications
+```bash
+pip install pandas numpy matplotlib seaborn statsmodels prophet scikit-learn
